@@ -1,0 +1,93 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+}
+
+.header-left img {
+    height: 50px
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.nav-links {
+    display: flex;
+    width: 400px;
+    justify-content: space-evenly;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+}
+
+.button input {
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 95px;
+    background: #0c6bff;
+    color: white;
+}
+
+.freedom-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.freedom {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: left;
+}
+
+.freedom {
+    max-width: 300px;
+}
+
+.freedom-text h2 {
+    font-size: 45px; 
+}
+
+.freedom-bottom {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.freedom-bottom input {
+    background-color: #0c6bff;
+    color: white;
+    border-radius: 20px;
+    height: 40px;
+    width: 135px;
+
+}
+
+.freedom-bottom a {
+    text-decoration: none;
+    color: #0c6bff;
+}
+
+.icongrid img {
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+}
+
+.icongrid {
+    display: grid;
+    grid-template-columns: repeat(10 max-width(40px));
+    grid-template-rows: repeat(10 max-width(40px));
+}
+
