@@ -1,7 +1,16 @@
+:root {
+    font-family: Arial, sans-serif;
+    --size-10px:.75rem;
+}
+
+.for-back {
+    background-image: url(../backgrounds/background-top.svg);
+}
+
 header {
     display: flex;
     justify-content: space-between;
-    margin: 10px;
+    margin: var(--size-10);
     align-items: center;
 }
 
@@ -14,49 +23,54 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    gap: 30px;
+    gap: 15px;
 }
 
 .nav-links {
     display: flex;
-    width: 400px;
+    width: 420px;
     justify-content: space-evenly;
 }
 
 .nav-links a {
     text-decoration: none;
     color: grey;
-    font-size: 20px;
+    font-size: 19px;
+    margin: 0;
 }
 
 .button input {
     border: none;
-    border-radius: 20px;
-    height: 40px;
-    width: 95px;
+    border-radius: 30px;
+    height: 50px;
+    width: 114px;
     background: #0c6bff;
     color: white;
+    margin-right: 15px;
 }
 
 .freedom-icons {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 40px 100px;
 }
 
 .freedom {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    align-items: left;
 }
 
 .freedom {
-    max-width: 300px;
+    max-width: 404px;
 }
 
 .freedom-text h2 {
-    font-size: 45px; 
+    max-width: 360px;
+    font-size: 47px;
+    font-weight: normal;
+    margin: 0;
 }
 
 .freedom-bottom {
@@ -65,29 +79,216 @@ nav {
     gap: 40px;
 }
 
-.freedom-bottom input {
+.freedom-bottom button {
     background-color: #0c6bff;
     color: white;
-    border-radius: 20px;
-    height: 40px;
-    width: 135px;
+    border: none;
+    border-radius: 27px;
+    height: 55px;
+    width: 150px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
 
+.freedom-bottom button i {
+    font-size: 20px;
 }
 
 .freedom-bottom a {
     text-decoration: none;
     color: #0c6bff;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .icongrid img {
-    height: 40px;
-    width: 40px;
-    border-radius: 30px;
+    height: 70%;
 }
 
 .icongrid {
     display: grid;
-    grid-template-columns: repeat(10 max-width(40px));
-    grid-template-rows: repeat(10 max-width(40px));
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
 }
 
+.large-icon, .small-icon { box-shadow: 0px 4px 7px 3px lightgrey; }
+
+.large-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 80px;
+    border-radius: 55px;
+    background-color: white;
+}
+
+.small-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55px;
+    width: 55px;
+    border-radius: 28px;
+    background-color: white;
+}
+
+.icon1 {
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.icon2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.icon3 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+.icon4 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    position: relative;
+    bottom: 15px;
+}
+
+.icon5 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.icon6 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.icon7 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+.cards {
+    margin: 150px 25px;
+}
+
+.cards-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 400px;
+    width: 300px;
+    box-shadow: 0px 10px 15px 10px lightgrey;
+}
+
+.cards-top-text {
+    text-align: center;
+}
+
+.cards-top-text h2 {
+    font-size: 40px;
+}
+
+.cards-top-text p {
+    font-size: 28px;
+    margin-bottom: 70px;
+    color: grey;
+}
+
+.card h3, p, a { margin: 0 15px;}
+
+.card img {
+    margin: 0 15px;
+    height: 70px;
+    width: 70px;
+}
+
+.card h3 { font-size: 28px;}
+
+.card p, a { font-size: 23px;}
+
+.card p { 
+    color: grey;
+    line-height: 30px;
+    width: 223px;
+}
+
+.card a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.premium-head {
+    display: flex;
+    align-items: center;
+}
+
+.premium-head span {
+    background-color: #07cc81;
+    text-align: center;
+    border-radius: 36px;
+    height: 28px;
+    width: 75px;
+    color: white;
+}
+
+.spantxt {
+    font-size: 18px;
+    position: relative;
+    top: 4px;
+}
+
+.front {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 150px 25px;
+}
+
+.front-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    bottom: 40px;
+}
+
+.front-left h2 {
+    margin: 0;
+    font-size: 37px;
+}
+
+.front-left button {
+    background-color: #0c6bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    height: 65px;
+    width: 200px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.front img {
+    width: 55%;
+}
+
+.why-text {
+    text-align: center;
+}
