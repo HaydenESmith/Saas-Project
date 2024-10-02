@@ -1,6 +1,6 @@
 :root {
     font-family: Arial, sans-serif;
-    --size-1rem: 1rem;\
+    --size-1rem: 1rem;
     --size-3px: 0.188rem;
     --size-5px: 0.313rem;
     --size-10px: .75rem;
@@ -37,6 +37,12 @@ body {
     padding: 0;
 }
 
+.header, .container, .content {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .for-back {
     background-image: url(../backgrounds/background-top.svg);
 }
@@ -50,6 +56,7 @@ header {
 
 .header-left img {
     height: var(--size-50px);
+    margin-left: var(--size-40px);
 }
 
 nav {
@@ -87,7 +94,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: var(--size-40px) var(--size-100px);
+    margin: var(--size-100px) var(--size-40px);
 }
 
 .freedom {
@@ -214,6 +221,7 @@ nav {
 
 .cards-container {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 2.188rem;
@@ -223,9 +231,9 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 25rem;
-    width: 18.75rem;
-    box-shadow: 0px 10px 15px 10px lightgrey;
+    height: 22rem;
+    width: 215px;
+    box-shadow: 0px 10px 15px 7px lightgrey;
 }
 
 .cards-top-text {
@@ -233,11 +241,11 @@ nav {
 }
 
 .cards-top-text h2 {
-    font-size: var(--size-40px);
+    font-size: var(--size-30px);
 }
 
 .cards-top-text p {
-    font-size: var(--size-28px);
+    font-size: var(--size-20px);
     margin-bottom: 4.375rem;
     color: grey;
 }
@@ -250,19 +258,21 @@ nav {
     width: var(--size-70px);
 }
 
-.card h3 { font-size: var(--size-28px);}
+.card h3 { font-size: var(--size-20px);}
 
 .card p, .card a { font-size: 1.438rem;}
 
 .card p { 
     color: grey;
     line-height: var(--size-30px);
-    width: 13.938rem;
+    width: 11.938rem;
+    font-size: var(--size-15px);
 }
 
 .card a {
     text-decoration: none;
     font-weight: bold;
+    font-size: var(--size-15px);
 }
 
 .premium-head {
@@ -289,7 +299,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: var(--size-150px) var(--size-25px);
+    margin: var(--size-100px) var(--size-40px);
 }
 
 .front-left {
@@ -302,7 +312,7 @@ nav {
 
 .front-left h2 {
     margin: 0;
-    font-size: 2.313rem;
+    font-size: var(--size-20px);
 }
 
 .front-left button {
@@ -310,8 +320,8 @@ nav {
     color: white;
     border: none;
     border-radius: var(--size-50px);
-    height: var(--size-60px);
-    width: var(--size-200px);
+    height: var(--size-50px);
+    width: var(--size-150px);
     font-size: var(--size-20px);
     display: flex;
     align-items: center;
@@ -335,7 +345,8 @@ nav {
     margin-bottom: var(--size-100px);
 }
 
-.why-text h2 { font-size: var(--size-30px); }
+.why-text h2 { font-size: var(--size-25px); }
+
 .why-text p {
     color: grey;
     font-size: var(--size-20px);
@@ -346,7 +357,7 @@ nav {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	gap: var(--size-20px);
+	gap: var(--size-5px);
     margin-bottom: var(--size-100px);
 }
 
@@ -424,10 +435,11 @@ nav {
 }
 
 .portrait img:nth-of-type(2) {
-    width: 18.75rem;
-    height: 30.938rem;
+    width: 15.75rem;
+    height: 31.938rem;
     position: relative;
-    bottom: 27.813rem;
+    bottom: 26.813rem;
+    right: 10px;
     z-index: -1;
 }
 
@@ -438,21 +450,22 @@ nav {
 }
 
 .hubtext img {
-    width: var(--size-150px);
+    width: var(--size-100px);
 }
 
 .hubtext p {
-    font-size: 2.188rem;
-    margin-bottom: var(--size-80px);
+    font-size: var(--size-18px);
+    margin: var(--size-55px) 0;
+    line-height: var(--size-28px);
 }
 
 .hubtext h3 {
-    font-size: var(--size-30px);
-    margin-bottom: var(--size-10px);
+    font-size: var(--size-20px);
+    margin-bottom: 0;
 }
 
 .hubtext h4 {
-    font-size: var(--size-20px);
+    font-size: var(--size-17px);
     color: grey;
     margin: 0;
 }
@@ -462,10 +475,10 @@ nav {
 }
 
 .brands h2 {
-    font-size: var(--size-28px);
+    font-size: var(--size-17px);
     text-align: center;
     color: grey;
-    margin-bottom: var(--size-70px);
+    margin-bottom: var(--size-50px);
 }
 
 .brandnames {
@@ -475,7 +488,7 @@ nav {
 }
 
 .brandnames img {
-    width: 180px;
+    width: 120px;
 }
 
 .pricing {
@@ -488,50 +501,59 @@ nav {
 }
 
 .pricetext h2 {
-    font-size: var(--size-40px);
+    font-size: var(--size-25px);
 }
 
 .pricetext p {
-    font-size: var(--size-25px);
+    font-size: var(--size-18px);
     color: grey;
+    margin: var(--size-10px);
 }
 
 .pricecards {
     display: flex;
     justify-content: space-between;
+    margin-bottom: var(--size-100px);
+    gap: 50px;
 }
 
-.cardcontainer {
-    margin: var(--size-80px);
+.maincard {
+    box-shadow: 0px 10px 15px 7px lightgrey;
+    height: 450px;
 }
+
+.cardcontainer { width: 400px; }
 
 .cardTop {
-    margin-bottom: var(--size-60px);
+    margin: var(--size-60px) var(--size-20px);
 }
 
 .cardTop h2 {
-    font-size: var(--size-80px);
+    font-size: var(--size-60px);
     font-weight: initial;
     margin-bottom: var(--size-40px);
 }
 
 .cardTop h2 span {
-    font-size: var(--size-40px);
+    font-size: var(--size-35px);
+    color: grey;
 }
 
 .cardTop p {
-    width: 450px;
-    font-size: 27px;
+    width: 340px;
+    font-size: var(--size-20px);
     color: grey;
 }
+
+.pricebutton { margin-left: var(--size-20px); }
 
 .priceButton button {
     background-color: #0c6bff;
     color: white;
     border: none;
     border-radius: var(--size-50px);
-    height: 65px;
-    width: 180px;
+    height: var(--size-50px);
+    width: var(--size-150px);
     font-size: var(--size-18px);
     display: flex;
     align-items: center;
@@ -540,15 +562,15 @@ nav {
 }
 
 .priceButton p {
-    font-size: var(--size-20px);
+    font-size: var(--size-15px);
     color: grey;
 }
 
 .pricegrid {
     display: grid;
-    grid-template-columns: repeat(2, 365px);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    column-gap: var(--size-100px);
+    column-gap: var(--size-50px);
     row-gap: var(--size-50px);
 }
 
@@ -557,12 +579,12 @@ nav {
 }
 
 .griditem h2 {
-    font-size: var(--size-30px);
+    font-size: var(--size-18px);
 }
 
 .griditem p {
     color: grey;
-    font-size: 24px;
+    font-size: var(--size-15px);
 }
 
 .people img {
@@ -573,6 +595,7 @@ nav {
 .hf {
     background-color: rgba(32, 51, 91, 255);
     display: flex;
+    flex-wrap: wrap;
     margin: 0 var(--size-40px);
     justify-content: center;
     align-items: center;
@@ -708,7 +731,7 @@ form button {
 }
 
 footer {
-    margin: 0 var(--size-200px);
+    margin: 0 var(--size-40px);
 }
 
 .footertop {
@@ -804,10 +827,6 @@ footer h4, footer a, footer i {
 .bottop {
     display: flex;
     justify-content: space-between;
-}
-
-.botbot h4 {
-    margin: 0 10.938rem;
 }
 
 
