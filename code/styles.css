@@ -596,39 +596,40 @@ nav {
     background-color: rgba(32, 51, 91, 255);
     display: flex;
     flex-wrap: wrap;
-    margin: 0 var(--size-40px);
-    justify-content: center;
+    gap: 10px;
+    justify-content: space-evenly;
     align-items: center;
     margin-bottom: var(--size-100px);
 }
 
-.hireus {
-    margin: var(--size-60px);
-}
+.hireus { margin-left: var(--size-60px); }
+
+.toptext { width: 200px; }
 
 .toptext  h2 {
-color: white;
-font-size: var(--size-40px);
-margin: 0;
+    color: white;
+    font-size: var(--size-30px);
+    margin: 0;
 }
 
 .toptext p {
     margin-bottom: var(--size-30px);
     color: #54657c;
-    font-size: var(--size-25px);
+    font-size: var(--size-20px);
+    width: 200px;
 }
 
 .quote {
-    font-size: 23px;
+    font-size: var(--size-18px);
     color: white;
-    width: 469px;
+    width: 360px;
     margin-bottom: var(--size-70px);
 }
 
 /* FIX HR WIDTH */
 
 .title h3 {
-    font-size: var(--size-28px);
+    font-size: var(--size-18px);
     color: white;
     margin-bottom: 0;
 }
@@ -636,7 +637,7 @@ margin: 0;
 .title h4 {
     margin-top: 8px;
     font-weight: initial;
-    font-size: 21px;
+    font-size: var(--size-18px);
     color: #54657c;
 }
 
@@ -645,33 +646,36 @@ margin: 0;
     align-items: center;
 }
 
-.people img:first-of-type {
+.people img {
     border-radius: var(--size-35px);
+    width: var(--size-55px);
+    height: var(--size-55px);
 }
+
 .people img:nth-of-type(2) {
     margin: 0 var(--size-50px);
-    border-radius: var(--size-35px);
 }
 .people img:nth-of-type(3) {
     border-radius: 45px;
-    height: var(--size-80px);
-    width: var(--size-80px);
+    height: var(--size-70px);
+    width: var(--size-70px);
 }
 
 form {
     display: grid;
-    grid-template-columns: repeat(2, 300px);
-    grid-template-rows: repeat(8, var(--size-70px));
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(9, var(--size-60px));
     gap: var(--size-30px);
     background-color: white;
     border-radius: var(--size-20px);
     padding: var(--size-30px);
-    margin: var(--size-60px);
+    margin: var(--size-40px);
+    width: 450px;
 }
 
 form h3 {
     grid-column: 1 / span 2;
-    font-size: 24px;
+    font-size: var(--size-17px);
 }
 
 form input, select, textarea {
@@ -679,7 +683,8 @@ form input, select, textarea {
 }
 
 form textarea {
-    grid-column: 1 / span 2; 
+    grid-column: 1 / span 2;
+    grid-row: 7 / 7;
 }
 
 .checkbox {
@@ -689,21 +694,20 @@ form textarea {
 }
 
 input#myCheckbox {
-    transform: scale(3);
+    transform: scale(2);
     margin-left: var(--size-17px);
     color: rgba(137, 137, 137, 255);
 }
 
 .checkbox h4 {
     color: grey;
-    font-size: 19px;
-    padding-left: var(--size-40px);
-    padding-right: var(--size-60px);
+    font-size: var(--size-15px);
+    padding-left: var(--size-10px);
 }
 
 .privf, .privs { 
     justify-self: center; 
-    font-size: var(--size-20px);
+    font-size: var(--size-18px);
     color: rgba(137, 137, 137, 255);
     height: fit-content;
     border-bottom: none;
@@ -720,7 +724,7 @@ input#myCheckbox {
 
 
 form button {
-    width: var(--size-200px);
+    width: var(--size-150px);
     grid-column: 1 / span 2;
     justify-self: center;
     border-radius: var(--size-35px);
