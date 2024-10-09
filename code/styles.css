@@ -67,6 +67,11 @@ nav {
     gap: var(--size-15px);
 }
 
+.nav-full {
+    display: flex;
+    align-items: center;
+}
+
 .nav-links {
     display: flex;
     width: 26.25rem;
@@ -78,6 +83,10 @@ nav {
     color: grey;
     font-size: 1.188rem;
     margin: 0;
+}
+
+[aria-controls="navbarDropdown"] {
+    display: none;
 }
 
 .button input {
@@ -375,7 +384,7 @@ nav {
 
 .line {
 	height: 0.125rem;
-	width: var(--size-200px);
+	width: 100%;
 	background-color: rgba(244,245,249,255);
 }
 
@@ -545,7 +554,7 @@ nav {
     color: grey;
 }
 
-.pricebutton { margin-left: var(--size-20px); }
+.priceButton { margin-left: var(--size-20px); }
 
 .priceButton button {
     background-color: #0c6bff;
@@ -759,6 +768,7 @@ footer {
 
 .footer-links {
     display: flex;
+    flex-wrap: wrap;
     gap: var(--size-50px);
 }
 
