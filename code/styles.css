@@ -367,7 +367,7 @@ nav {
 	justify-content: center;
 	align-items: center;
 	gap: var(--size-5px);
-    margin-bottom: var(--size-100px);
+    margin: var(--size-100px) var(--size-40px);
 }
 
 .circle {
@@ -430,7 +430,6 @@ nav {
     margin: 0 var(--size-40px);
     justify-content: space-between;
     gap: 5.438rem;
-    height: var(--size-660px);
 }
 
 .portrait {
@@ -693,7 +692,7 @@ form input, select, textarea {
 
 form textarea {
     grid-column: 1 / span 2;
-    grid-row: 7 / 7;
+    grid-row: 5 / 7;
 }
 
 .checkbox {
@@ -725,6 +724,7 @@ input#myCheckbox {
     background-repeat: repeat-x;
     background-size: 11px 2px;
     text-decoration: none;
+    grid-row: 8 / 9;
 }
 
 .privs {
@@ -735,6 +735,7 @@ input#myCheckbox {
 form button {
     width: var(--size-150px);
     grid-column: 1 / span 2;
+    grid-row: 9 / 10;
     justify-self: center;
     border-radius: var(--size-35px);
     background-color: rgba(36, 118, 254, 255);

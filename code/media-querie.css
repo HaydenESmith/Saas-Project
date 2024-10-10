@@ -63,7 +63,7 @@
         grid-column: 4 / 5;
         grid-row: 2 / 3;
     }
-
+/* YOU ONLY NEED TO ADD CHANGES, NOT WHOLE CSS PROPERTIES */
     .card {
         display: flex;
         flex-direction: column;
@@ -78,6 +78,109 @@
         line-height: var(--size-25px);
         width: 18.938rem;
         font-size: var(--size-15px);
+    }
+
+    .front {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: var(--size-100px) var(--size-40px);
+    }
+
+    .front-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--size-30px);
+        position: relative;
+        bottom: var(--size-40px);
+    }
+
+    .front-left h2 {
+        margin: 0;
+        font-size: var(--size-25px);
+        width: 560px;
+        text-align: center;
+    }
+
+    .front img {
+        width: auto;
+    }
+
+    .hubspot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: var(--size-100px) var(--size-40px);
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .hubtext {
+        width: 630px;
+        text-align: center;
+        margin-bottom: var(--size-100px);
+    }
+
+    .hubtext img { width: var(--size-150px); }
+
+    .hubtext p {
+        font-size: var(--size-25px);
+        margin: var(--size-55px) 0;
+        line-height: var(--size-28px);
+    }
+
+    .pricecards {
+        flex-direction: column;
+    }
+
+    .maincard {
+        box-shadow: 0px 10px 15px 7px lightgrey;
+        height: 450px;
+        width: 100%;
+    }
+
+    .cardcontainer { 
+        text-align: center;
+        width: 100%;
+     }
+
+    .cardTop h2 {
+        font-size: var(--size-60px);
+        font-weight: initial;
+        margin-bottom: var(--size-40px);
+    }
+
+    .cardTop p {
+        font-size: var(--size-25px);
+        text-align: left;
+        color: grey;
+        width: 100%;
+    }
+
+    .priceButton {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricegrid { margin: 25px; }
+
+    .griditem h2,
+    .griditem p { font-size: var(--size-25px); }
+
+    .hf { flex-direction: column; }
+
+    .hireus {
+        display: flex;
+        gap: 60px;
+        margin: var(--size-50px) var(--size-100px);
+    }
+
+    form {
+        margin: var(--size-50px);
+        width: auto;
     }
 
 }
