@@ -225,7 +225,7 @@ nav {
 }
 
 .cards {
-    margin: var(--size-150px) var(--size-25px);
+    margin: var(--size-100px) var(--size-25px);
 }
 
 .cards-container {
@@ -290,7 +290,7 @@ nav {
 }
 
 .premium-head span {
-    background-color: #07cc81;
+    background-color: rgba(1,200,167,255);
     text-align: center;
     border-radius: 2.25rem;
     height: var(--size-28px);
@@ -308,7 +308,7 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: var(--size-100px) var(--size-40px);
+    margin: var(--size-100px) var(--size-15px);
 }
 
 .front-left {
@@ -416,6 +416,10 @@ nav {
     left: var(--size-3px);
 }
 
+.play-img img {
+    margin: 0;
+}
+
 .portrait {
     max-width: 25rem;
 }
@@ -427,14 +431,16 @@ nav {
 
 .hubspot {
     display: flex;
-    margin: 0 var(--size-40px);
+    margin: var(--size-150px) var(--size-40px);
     justify-content: space-between;
+    align-items: center;
     gap: 5.438rem;
 }
 
 .portrait {
+    display: flex;
     max-width: 30rem;
-    height: var(--size-660px);
+    height: max-content;
 }
 
 .portrait img:first-of-type {
@@ -446,15 +452,13 @@ nav {
     width: 15.75rem;
     height: 31.938rem;
     position: relative;
-    bottom: 26.813rem;
-    right: 10px;
+    right: 570px;
+    top: 110px;
     z-index: -1;
 }
 
 .hubtext {
     width: 51%;
-    position: relative;
-    top: var(--size-100px);
 }
 
 .hubtext img {
@@ -588,6 +592,19 @@ nav {
 
 .griditem h2 {
     font-size: var(--size-18px);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.griditem h2 span  {
+    background-color: rgba(1, 200, 167, 255);
+    text-align: center;
+    border-radius: 2.25rem;
+    height: var(--size-20px);
+    width: 4.688rem;
+    color: white;
+    display: block;
 }
 
 .griditem p {
@@ -661,8 +678,9 @@ nav {
 }
 
 .people img:nth-of-type(2) {
-    margin: 0 var(--size-50px);
+    margin: 0 var(--size-30px);
 }
+
 .people img:nth-of-type(3) {
     border-radius: 45px;
     height: var(--size-70px);
@@ -751,7 +769,7 @@ footer {
 .footertop {
     margin-bottom: var(--size-50px);
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: var(--size-50px);
 }
