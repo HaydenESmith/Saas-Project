@@ -19,7 +19,7 @@
             </div>
             <nav id="nav">
                 <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
-                    <span>&#9776;</span>
+                    &#9776  
                 </button>
                 <div class="nav-full">
                     <div class="nav-links">
@@ -126,13 +126,25 @@
 
             <!-- figure out text below circles -->
             <div class="display">
-                <div class="circle">&#8226;</div>
+                <div class="circle-text">
+                    <div class="circle">&#8226;</div>
+                    <h2>Basic elements</h2>
+                </div>
                 <div class="line"></div>
-                <div class="circle">&#8226;</div>
+                <div class="circle-text">
+                    <div class="circle">&#8226;</div>
+                    <h2>Components</h2>
+                </div>
                 <div class="line"></div>
-                <div class="circle">&#8226;</div>
+                <div class="circle-text">
+                    <div class="circle">&#8226;</div>
+                    <h2>Combined Components</h2>
+                </div>
                 <div class="line"></div>
-                <div class="circle">&#8226;</div>
+                <div class="circle-text">
+                    <div class="circle">&#8226;</div>
+                    <h2>Page Layout</h2>
+                </div>
             </div>
 
             <div class="play-img">
@@ -391,6 +403,30 @@
             </div>
 
         </footer>
+
+        <script>
+            const nav = document.getElementById("nav");
+            console.log(nav);
+            window.onscroll = function () {
+                if (window.scrollY > 100) {
+                    nav.classList.add("sticky");
+                } else {
+                    nav.classList.remove("sticky");
+                }
+            }
+
+
+
+            const navButton = document.querySelector("button[aria-expanded]");
+
+            function toggleNav({ target }) {
+                const expanded = target.getAttribute("aria-expanded") === "true" || false;
+                console.log("expanded",expanded)
+                navButton.setAttribute("aria-expanded", !expanded);
+            }
+
+            navButton.addEventListener("click", toggleNav);
+         </script>
 
         
 
